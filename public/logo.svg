@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none">
+  <circle cx="20" cy="20" r="18" stroke="#2DD4BF" stroke-width="2" fill="#030B0D"/>
+  <path d="M14 26C14 26 16 22 20 22C24 22 26 26 26 26" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="20" cy="15" r="3" fill="#2DD4BF"/>
+  <path d="M20 18V22" stroke="#2DD4BF" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="20" y="35" text-anchor="middle" fill="#2DD4BF" font-size="5" font-family="monospace" font-weight="bold">SD</text>
+</svg>
