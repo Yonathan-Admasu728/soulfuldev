@@ -4,6 +4,7 @@ import {
   creator,
   web,
   javascript,
+  python,
   typescript,
   html,
   css,
@@ -15,13 +16,11 @@ import {
   git,
   figma,
   docker,
-  worthy,
-  toptal,
   clients,
   rulings,
-  carrent,
-  jobit,
-  tripguide,
+  ecogymShot,
+  shiftShot,
+  dressedasShot,
   threejs,
 } from "../assets";
 
@@ -46,24 +45,28 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full-Stack Developer",
+    title: "Full-Stack Engineer",
     icon: web,
+  },
+  {
+    title: "Automation & Web Scraping",
+    icon: backend,
   },
   {
     title: "Mobile App Builder",
     icon: mobile,
   },
   {
-    title: "Platform Architect",
-    icon: backend,
-  },
-  {
-    title: "Founder & Creator",
+    title: "AI Systems Evaluation",
     icon: creator,
   },
 ];
 
 const technologies = [
+  {
+    name: "Python",
+    icon: python,
+  },
   {
     name: "JavaScript",
     icon: javascript,
@@ -120,64 +123,53 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Toptal Solutions",
-    icon: toptal,
-    iconBg: "#0A2E28",
-    date: "2020 - 2021",
-    points: [
-      "Built and shipped production React applications for enterprise clients through Toptal's elite talent network.",
-      "Implemented complex state management patterns, responsive layouts, and cross-browser compatibility.",
-      "Collaborated with distributed teams spanning designers, PMs, and senior engineers on tight deadlines.",
-    ],
-  },
-  {
-    title: "React Native Developer",
+    title: "Web Developer & Digital Consultant",
     company_name: "Clients Sky Digital",
     icon: clients,
     iconBg: "#134E4A",
-    date: "2021 - 2022",
+    date: "2019 - Present",
     points: [
-      "Developed cross-platform mobile applications using React Native, delivering iOS and Android from a single codebase.",
-      "Integrated native device APIs, push notifications, and real-time data syncing for client applications.",
-      "Led mobile architecture decisions and established coding standards for the development team.",
+      "Build and maintain websites for small-business clients across a range of industries, owning the work end to end from build through launch and ongoing maintenance.",
+      "Implement lead-generation systems and search-engine optimization, translating client business goals into measurable technical requirements.",
+      "Serve as the sole technical contact for each engagement - scoping, delivery, troubleshooting, and long-term client support.",
     ],
   },
   {
-    title: "Full-Stack Developer",
+    title: "UI / Frontend Engineer",
+    company_name: "Scribble Stadium",
+    icon: web,
+    iconBg: "#0A2E28",
+    date: "Aug 2021 - Dec 2021",
+    points: [
+      "Implemented a new menu design across multiple pages in partnership with the frontend team.",
+      "Built modular React components serving as the primary user interaction surface.",
+      "Identified and resolved defects across the application using ESLint, systematic debugging, and troubleshooting.",
+    ],
+  },
+  {
+    title: "Backend & Automation Engineer",
     company_name: "Rulings.law",
     icon: rulings,
     iconBg: "#0A2E28",
-    date: "2022 - 2023",
+    date: "2022 - Present",
     points: [
-      "Reimagined the entire backend infrastructure for a legal web scraping platform running 33 concurrent bots.",
-      "Converted the full codebase to TypeScript, dramatically reducing runtime errors and improving maintainability.",
-      "Built robust data pipelines and automated monitoring systems that eliminated chronic system crashes.",
+      "Build and maintain the production data-ingestion system behind a subscription legal-research platform - web scraping bots (Puppeteer, Cheerio) collecting court rulings, hearing dates, and judge and courthouse records.",
+      "Designed the MongoDB domain model - rulings, courthouses, departments, judge profiles, subscriptions, and scraper logs - backing search and subscriber features.",
+      "Implemented a PDF extraction pipeline converting court-issued ruling documents into structured, queryable records.",
+      "Led the TypeScript migration and a hosting-platform migration, each with documented optimization and verification passes.",
     ],
   },
   {
-    title: "Full-Stack Developer",
-    company_name: "Worthy Cause",
-    icon: worthy,
-    iconBg: "#134E4A",
-    date: "2023 - 2024",
-    points: [
-      "Architected and developed full-stack features for a social impact platform using React, Node.js, and PostgreSQL.",
-      "Implemented payment processing, user authentication, and real-time collaboration features.",
-      "Optimized application performance, resulting in measurable improvements to page load times and user engagement.",
-    ],
-  },
-  {
-    title: "Founder & Builder",
-    company_name: "EcoGym / The Animator Shift",
-    icon: web,
+    title: "Founder & Lead Engineer",
+    company_name: "EcoGym",
+    icon: creator,
     iconBg: "#0D3B35",
-    date: "2024 - Present",
+    date: "2023 - Present",
     points: [
-      "Founded EcoGym — a mindfulness & movement platform with 200+ audio tracks, live at ecogym.space.",
-      "Created The Animator Shift — a consciousness framework with a published book on Amazon, landing page, Substack, and Daily Anchor PWA.",
-      "Built DressedAs — an AI wardrobe intelligence app using GPT-4o vision, consolidating web + mobile in a monorepo.",
-      "Designed and shipped FitnessVoiceFlow — a voice-over production studio powered by ElevenLabs API with custom cloned voices.",
+      "Designed and shipped EcoGym, a cross-platform React Native (Expo) fitness and wellness application, through full release to the Apple App Store and Google Play.",
+      "Built the companion Next.js web platform with Firebase backend, authentication flows, and Sentry-based error monitoring.",
+      "Operate agentic coding workflows in daily development - multi-agent task delegation, Model Context Protocol tool integrations, and structured evaluation loops that rank model-generated solutions before merge.",
+      "Maintain release histories exceeding 200 commits with reproducible build and QA gates.",
     ],
   },
 ];
@@ -185,27 +177,19 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "There was always something crashing in one of the 33 bots running on my legal scraping platform — until Yonathan reimagined the entire backend and converted everything to TypeScript in record time.",
+      "There was always something crashing in one of the 33 bots running on my legal scraping platform - until Yonathan reimagined the entire backend and converted everything to TypeScript in record time.",
     name: "William Appleby",
     designation: "CEO",
     company: "Rulings.law",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjUwIiBmaWxsPSIjMEQzQjM1Ii8+PHRleHQgeD0iNTAiIHk9IjUwIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNDOUEyMjciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIj5XQTwvdGV4dD48L3N2Zz4=",
   },
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Yonathan proved me wrong. His attention to both design and performance is rare.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "After Yonathan optimized our platform, our traffic increased by 50%. The combination of technical skill and creative vision is what sets him apart.",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    "Yonathan built Blush Estates from the ground up - the brand, the site, and the systems running behind it. He set up my home search and consultation booking so inquiries arrive organized instead of scattered across my inbox. He understood I needed something that looked like my brand and ran without me having to think about it. I send clients there now with complete confidence.",
+    name: "Mia Kennedy",
+    designation: "REALTOR®",
+    company: "Blush Estates",
+    image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjUwIiBmaWxsPSIjMEQzQjM1Ii8+PHRleHQgeD0iNTAiIHk9IjUwIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMzYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IiNDOUEyMjciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJjZW50cmFsIj5NSzwvdGV4dD48L3N2Zz4=",
   },
 ];
 
@@ -228,7 +212,7 @@ const projects = [
         color: "gold-text-gradient",
       },
     ],
-    image: carrent,
+    image: ecogymShot,
     source_code_link: "https://ecogym.space",
     live_link: "https://ecogym.space",
   },
@@ -250,8 +234,8 @@ const projects = [
         color: "gold-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/Yonathan-Admasu728/animator-shift-landing",
+    image: shiftShot,
+    source_code_link: "https://theanimatorshift.com",
     live_link: "https://theanimatorshift.com",
   },
   {
@@ -272,7 +256,7 @@ const projects = [
         color: "gold-text-gradient",
       },
     ],
-    image: tripguide,
+    image: dressedasShot,
     source_code_link: "https://dressedas.com",
     live_link: "https://dressedas.com",
   },

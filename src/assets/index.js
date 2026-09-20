@@ -15,20 +15,20 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
+import python from "./tech/python.svg";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import worthy from "./company/worthy.png";
 import clients from "./company/clients.png";
-import toptal from "./company/toptal.png";
 import rulings from "./company/rulings.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import ecogymShot from "./projects/ecogym.png";
+import shiftShot from "./projects/animatorshift.png";
+import dressedasShot from "./projects/dressedas.png";
+
 
 export {
   logo,
@@ -47,16 +47,15 @@ export {
   javascript,
   mongodb,
   nodejs,
+  python,
   reactjs,
   redux,
   tailwind,
   typescript,
   threejs,
-  worthy,
   rulings,
-  toptal,
   clients,
-  carrent,
-  jobit,
-  tripguide,
+  ecogymShot,
+  shiftShot,
+  dressedasShot,
 };
